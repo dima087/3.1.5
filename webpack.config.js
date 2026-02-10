@@ -33,7 +33,15 @@ module.exports = {
                 generator: {
                     filename: 'img/[name][ext]'
                 }
-            }
+            },
+            {
+                output: {
+                    path: path.resolve(__dirname, 'dist'),  // или 'build'
+                    filename: 'js/[name].bundle.js',
+                    assetModuleFilename: '[name][ext]',
+                    clean: true  // очищает папку перед сборкой
+                }
+            }    
         ]
     },
 
