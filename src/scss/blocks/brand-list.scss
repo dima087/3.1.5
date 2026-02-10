@@ -1,0 +1,27 @@
+@use '../common/doc' as *;
+
+.brand-list {
+
+  &__brand {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+    height: 72px;
+    padding: 16px;
+    background-color: $color-white;
+    border-radius: 6px;
+    border: 1px solid $color-border;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      width: auto;
+
+      &:hover {
+        background-color: #e8e6e6;
+      }
+    }
+  }
+}
